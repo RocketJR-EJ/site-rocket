@@ -117,8 +117,7 @@ a:hover{
     font-size: 0.72rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 1rem; /* 142.857% */
-    text-transform: capitalize;   
+    line-height: 1rem; /* 142.857% */ 
 }
 
 .banner-card{
