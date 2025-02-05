@@ -59,3 +59,111 @@ a{
 a:hover{
     color: #9c0000;
 }
+
+.banner{
+    width: 100%;
+    margin-top: -0.1rem;
+    display: flex;
+   
+
+}
+.banner img{
+    width: 100%;
+}
+ 
+.banner-text {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-left: 3rem;
+    margin-top: 9rem;
+}
+
+.maquina-escrever{
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-align: justify;
+    font-family: "Cutive", serif;
+    font-weight: 700;
+    font-style: normal;
+        
+}
+.maquina-escrever:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+   /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+   
+   @keyframes pisca{
+       0%, 100%{
+           opacity: 1;
+       }
+       50%{
+           opacity: 0;
+       }
+   }
+
+.banner-text p{
+    margin-top: 1rem;
+    color: #FFF;
+    width: 23rem;
+    height: 3rem;
+    font-family: "Bricolage Grotesque";
+    font-size: 0.72rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1rem; /* 142.857% */ 
+}
+
+.banner-card{
+    position: absolute;
+    display: flex;
+    width: 12rem;
+    height: 1.8rem;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15rem;
+    margin-top: 17rem;
+    background: linear-gradient(90deg, #870000 0%, #D90000 100%); 
+}
+.banner-card h3{
+    color: #FFF;
+    text-align: center;
+    width: 8rem;
+    font-family: "Bricolage Grotesque";
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.6875rem; /* 100% */
+}
+
+.banner-card h2{
+    width: 4.375rem;
+    height: 1.8rem;
+    flex-shrink: 0;
+    border: 1px solid #F4A8A8;
+    background: linear-gradient(90deg, #FFF 0%, #C2C0C0 100%);
+    font-family: "Bricolage Grotesque";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.banner-card h2 p{
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700; /* 52.941% */
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #8A0101 -74%, #F00000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}

@@ -1,7 +1,7 @@
 # Landing Page RocketJR
 Landing page da RocketJR, empresa júnior do curso de Sistemas de Informação da UFAL.
 
-## Instruões do projeto
+## Instrucões do projeto
 O site foi desenvolvido utilizando HTML, CSS e JavaScript. Para rodar o projeto, basta clonar o repositório e abrir o arquivo `index.html` no seu navegador.
 
 ## Estrutura do projeto
