@@ -206,7 +206,8 @@ aside h1{
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    width: 1100px;
+    height: 350px;
     overflow: hidden;
   }
   
@@ -219,24 +220,29 @@ aside h1{
     padding: 20px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(49, 49, 49, 0.116);
   }
-  
   .swiper-button-prev,
   .swiper-button-next {
-    color: #000; /* Cor das setas */
+    background-color: transparent; /* Para garantir que o fundo seja transparente */
+    color: transparent; /* Caso a cor não esteja funcionando diretamente */
+  }
+  
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    color: #ff0000; /* Altera a cor das setas */
   }
   
   .swiper-pagination-bullet {
-    background: #000;
+    background: #000000;
   }
 .container .card img{
-    margin-top: 2rem;
+    margin-top: 2.2rem;
 }
 
 .container .card{
-    padding: 0.7rem 1rem 0.7rem;
-    border: 1px solid #070707;
+    padding: 2rem 1rem 2rem 1rem;
+    border: 1px solid #0000003f;
     text-align: center;
     border-radius: 10px;
 
