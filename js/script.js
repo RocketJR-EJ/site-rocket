@@ -11,6 +11,7 @@ function typeWrite(elemento){
  }
  const titulo = document.querySelector('.maquina-escrever');
  typeWrite(titulo);
+
  
  document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".swiper", {
