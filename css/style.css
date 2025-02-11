@@ -27,6 +27,7 @@ nav{
 
 hr{
     padding: 1rem 0.3rem 0.3rem 1rem;
+    border: none;
     background: linear-gradient(to right, #520101, #F60707);
 }
 
@@ -259,5 +260,5 @@ aside h1{
     width: 20rem;
 }
 
-}
+
 
