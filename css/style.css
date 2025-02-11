@@ -28,6 +28,7 @@ nav{
 hr{
     padding: 1rem 0.3rem 0.3rem 1rem;
     background: linear-gradient(to right, #520101, #F60707);
+    border: none;
 }
 
 
@@ -62,7 +63,6 @@ a:hover{
 
 .banner{
     width: 100%;
-    margin-top: -0.1rem;
     display: flex;
    
 
@@ -168,6 +168,14 @@ a:hover{
     
 }
 
+section {
+    width: 100%;
+  }
+  
+.text-icon{
+    padding: 5rem 0.3rem 0.3rem 1rem;
+    background: linear-gradient(to right, #520101, #F60707);
+}
 
 .servicos {
     display: flex;
