@@ -31,6 +31,23 @@ hr{
     background: linear-gradient(to right, #520101, #F60707);
 }
 
+article{
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+    padding: 3rem 2rem 3rem 2rem;
+    background-color: #400000;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+article p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+
 
 button{
     padding: 0.9rem 2rem 0.9rem 2rem;
@@ -63,7 +80,6 @@ a:hover{
 
 .banner{
     width: 100%;
-    margin-top: -0.1rem;
     display: flex;
    
 
@@ -73,31 +89,26 @@ a:hover{
 }
  
 .banner-text {
-    position: absolute;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    position:absolute;
+    justify-content: space-around;
     align-items:flex-start;
-    padding-left: 3rem;
-    margin-top: 9rem;
 }
 
 .maquina-escrever{
-    font-size: 1.6rem;
-    color: #ffffff;
-    text-align: justify;
-    font-family: "Cutive", serif;
-    font-weight: 700;
-    font-style: normal;
-        
+    padding: 9rem;
+    font-size: 4rem;
+    color: #ffffff;  
+    white-space: normal;
+    word-wrap: break-word;   
 }
 .maquina-escrever:after{
-    content: '|';
     margin-left: 5px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
+
    /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
    
    @keyframes pisca{
@@ -110,64 +121,16 @@ a:hover{
    }
 
 .banner-text p{
-    margin-top: 1rem;
     color: #FFF;
-    width: 23rem;
+    margin-top: -200px;
+    width: 54rem;
     height: 3rem;
+    padding: 9rem;
     font-family: "Bricolage Grotesque";
-    font-size: 0.72rem;
+    font-size: 1.22rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 1rem; /* 142.857% */ 
-}
-
-.banner-card{
-    position: absolute;
-    display: flex;
-    width: 12rem;
-    height: 1.8rem;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 15rem;
-    margin-top: 17rem;
-    background: linear-gradient(90deg, #870000 0%, #D90000 100%); 
-}
-.banner-card h3{
-    color: #FFF;
-    text-align: center;
-    width: 8rem;
-    font-family: "Bricolage Grotesque";
-    font-size: 0.6rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 0.6875rem; /* 100% */
-}
-
-.banner-card h2{
-    width: 4.375rem;
-    height: 1.8rem;
-    flex-shrink: 0;
-    border: 1px solid #F4A8A8;
-    background: linear-gradient(90deg, #FFF 0%, #C2C0C0 100%);
-    font-family: "Bricolage Grotesque";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-.banner-card h2 p{
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 700; /* 52.941% */
-    text-transform: capitalize;
-    background: linear-gradient(90deg, #8A0101 -74%, #F00000 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-
+    line-height: 1.4rem; /* 142.857% */ 
 }
 
 
@@ -175,6 +138,7 @@ a:hover{
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    margin-top: 5rem;
     gap: 4rem; 
 }
 
@@ -222,7 +186,6 @@ aside h1{
     padding: 20px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(49, 49, 49, 0.116);
   }
   .swiper-button-prev,
   .swiper-button-next {
@@ -259,6 +222,5 @@ aside h1{
     margin-top: 1rem;
     width: 20rem;
 }
-
 
 
