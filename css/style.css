@@ -261,4 +261,99 @@ aside h1{
 }
 
 
+.quem-somos{
+display: flex;
+flex-direction: column;
+background-color: #860000;
+height: 718px;
+width: 1580px;
+}
 
+.title-text h1{
+color: #FFF;
+font-family: "Inter", sans-serif;
+font-size: 41px;
+font-style: normal;
+padding-top: 50px;
+padding-left: 112px;
+letter-spacing: 0%;
+}
+
+.text-quem-somos p{
+color: #E7E7E7;
+font-family: "Bricolage Grotesque", serif;
+font-style: normal;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.2px;
+letter-spacing: 0%;
+text-align: justify;
+padding-top: 20px;
+padding-left: 121px;
+width: 1250px;
+}
+
+
+.retangulo {
+    width: 80%; 
+    max-width: 660px;
+    height: 140px;
+    background-color: #A80606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:  center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 29px;
+    margin-bottom: 20px; 
+    position: relative;
+    bottom: 90%;
+    left: 8%;
+
+
+}
+
+.retangulo p {
+    color: #FFF;
+    font-family: "Bricolage Grotesque", serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4; 
+}
+.retangulo p b {
+    font-weight: 900; 
+    font-size: 18px; 
+    color: #FFF;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+}
+
+.galeria {
+    display: flex;
+    padding-left:120px;
+    margin-top: 20px;
+    gap: 30px;
+}
+.galeria img:nth-child(2),
+.galeria img:nth-child(3) {
+    transform: translateY(-80px);
+
+
+}
+
+.galeria img:first-child{
+    transform: translateX(px);
+}
+.container-retangulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.image1{
+    padding-left: 75px;
+    padding-right: 10px;
+    padding-bottom: -20px;
+}
