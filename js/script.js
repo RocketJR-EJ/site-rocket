@@ -16,3 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Typed("#typed-text", {
+      strings: ["Chegou A Hora <br> Da Inovação"], 
+      typeSpeed: 50, 
+      backSpeed: 30, 
+      startDelay: 500, 
+      showCursor: true, 
+      cursorChar: "|", 
+      smartBackspace: true, 
+      loop: false 
+  });
+});

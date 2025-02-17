@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
     font-family: "Bricolage Grotesque", serif;
     font-style: normal;
+    overflow-x: hidden;
 }
 
 header{
@@ -34,7 +34,7 @@ hr{
 article{
     display: flex;
     flex-direction: row;
-    margin-top: -10px;
+    margin: -1vh;
     padding: 3rem 2rem 3rem 2rem;
     background-color: #400000;
     justify-content: center;
@@ -78,61 +78,42 @@ a:hover{
     color: #9c0000;
 }
 
-.banner{
-    width: 100%;
+.rocket-section {
     display: flex;
-   
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background: url('/assets/banner.svg') no-repeat center center/cover;
+    color: white;
+    height: 68vh;
+    padding: 10px;
+    position: relative;
+}
+.text-content{
+margin-left: -110vh;
 
 }
-.banner img{
-    width: 100%;
+.text-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
 }
- 
-.banner-text {
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    justify-content: space-around;
-    align-items:flex-start;
+.text-content p {
+    font-size: 1.2em;
+    width: 69vh;
+    margin-bottom: 20px;
 }
 
-.maquina-escrever{
-    padding: 9rem;
-    font-size: 4rem;
-    color: #ffffff;  
-    white-space: normal;
-    word-wrap: break-word;   
+
+@media (max-width: 768px) {
+    .rocket-section {
+        text-align: center;
+        padding: 20px;
+    }
+    .text-content {
+        padding: 20px;
+        max-width: 90%;
+    }
 }
-.maquina-escrever:after{
-    margin-left: 5px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-   }
-
-   /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
-   
-   @keyframes pisca{
-       0%, 100%{
-           opacity: 1;
-       }
-       50%{
-           opacity: 0;
-       }
-   }
-
-.banner-text p{
-    color: #FFF;
-    margin-top: -200px;
-    width: 54rem;
-    height: 3rem;
-    padding: 9rem;
-    font-family: "Bricolage Grotesque";
-    font-size: 1.22rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.4rem; /* 142.857% */ 
-}
-
 
 .servicos {
     display: flex;
@@ -169,6 +150,7 @@ aside h1{
     -webkit-background-clip: text;
 
 }
+
 
 .container {
     width: 100%;
