@@ -8,6 +8,7 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -177,6 +178,7 @@ aside h1{
     background: #000000;
   }
 .container .card img{
+    width: 60px;
     margin-top: 2.2rem;
 }
 
