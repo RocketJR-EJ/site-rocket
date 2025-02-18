@@ -1,43 +1,31 @@
-function typeWrite(elemento){
-     const textoArray = elemento.innerHTML.split('');
-     elemento.innerHTML = ' ';
-     textoArray.forEach(function(letra, i){   
-       
-     setTimeout(function(){
-         elemento.innerHTML += letra;
-     }, 75 * i)
- 
-   });
- }
- const titulo = document.querySelector('.maquina-escrever');
- typeWrite(titulo);
-
- 
- document.addEventListener("DOMContentLoaded", function () {
-  new Swiper(".swiper", {
-    loop: true,
-    slidesPerView: 1, // Exibe um slide por vez (ajuste conforme necessário)
-    spaceBetween: 20, // Espaço entre os slides
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      }
-    }
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
   });
 });
 
-
+document.addEventListener("DOMContentLoaded", function () {
+  new Typed("#typed-text", {
+      strings: ["Chegou A Hora <br> Da Inovação"], 
+      typeSpeed: 50, 
+      backSpeed: 30, 
+      startDelay: 500, 
+      showCursor: true, 
+      cursorChar: "|", 
+      smartBackspace: true, 
+      loop: false 
+  });
+});
