@@ -178,7 +178,7 @@ aside h1{
     background: #000000;
   }
 .container .card img{
-    width: 60px;
+    width: 80px;
     margin-top: 2.2rem;
 }
 
@@ -205,8 +205,6 @@ aside h1{
 display: flex;
 flex-direction: column;
 background-color: #860000;
-height: 718px;
-width: 1580px;
 }
 
 .title-text h1{
