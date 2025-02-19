@@ -88,7 +88,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     text-align: left;
-    background: url('/assets/banner.svg') no-repeat center center/cover;
+    background: url('../assets/banner.svg') no-repeat center center/cover;
     color: white;
     height: 68vh;
     padding: 10px;
