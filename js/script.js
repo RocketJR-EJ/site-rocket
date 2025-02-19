@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   new Typed("#typed-text", {
-      strings: ["Chegou A Hora <br> Da Inovação"], 
+      strings: ["Chegou a hora <br> da inovação!"], 
       typeSpeed: 50, 
       backSpeed: 30, 
       startDelay: 500, 
