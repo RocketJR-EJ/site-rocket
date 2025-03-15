@@ -643,3 +643,15 @@ width: 1250px;
         margin-left: 20px;
     }
 }
+
+@media (max-width: 834px){
+    nav{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+}
