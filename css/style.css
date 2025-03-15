@@ -644,7 +644,10 @@ width: 1250px;
     }
 }
 
-@media (max-width: 834px){
+@media (max-width: 431px){
+    body{
+        overflow-x: hidden;
+    }
     nav{
         display: none;
     }
@@ -653,5 +656,23 @@ width: 1250px;
     }
     header{
         justify-content: center;
+    }
+    .rocket-section{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-content{
+        margin-left: -1;
+        width: 100%;
+    }
+    .text-content h1{
+        font-size: 1em;
+    }
+    .text-content p {
+        font-size: 1em;
+        width: 100%;
     }
 }
