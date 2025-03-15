@@ -646,6 +646,9 @@ width: 1250px;
 
 @media (max-width: 431px){
     body{
+        width: 100%;
+        max-width: 430px;
+        margin: 0;
         overflow-x: hidden;
     }
     nav{
@@ -657,22 +660,23 @@ width: 1250px;
     header{
         justify-content: center;
     }
-    .rocket-section{
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 20px;
+    hr{
+        width: 430px;
     }
-
+    .rocket-section{
+        width: 430px;
+        height: 167px;
+    }
     .text-content{
-        margin-left: -1;
-        width: 100%;
+        margin-left: -30vh;
+        max-width: 208px;
     }
     .text-content h1{
-        font-size: 1em;
+        font-size: 0.8em;
     }
-    .text-content p {
-        font-size: 1em;
-        width: 100%;
+    .text-content p{
+        font-size: 0.66em;
+        width: 67vh;
+        max-width: 100%;
     }
 }
