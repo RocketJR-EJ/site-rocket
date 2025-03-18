@@ -107,8 +107,6 @@ margin-left: -110vh;
     width: 69vh;
     margin-bottom: 20px;
 }
-
-
 .servicos {
     display: flex;
     flex-direction: column;
@@ -663,12 +661,14 @@ width: 1250px;
     hr{
         width: 430px;
     }
+    /*Redimensionamento IP14ProMax*/
     .rocket-section{
-        width: 430px;
         height: 167px;
+        padding: 0;
+        background-color: #400000;
     }
     .text-content{
-        margin-left: -30vh;
+        margin-left: -23vh;
         max-width: 208px;
     }
     .text-content h1{
@@ -678,5 +678,106 @@ width: 1250px;
         font-size: 0.66em;
         width: 67vh;
         max-width: 100%;
+    }
+    /*Mudanças em componentes e textos*/
+    article{
+        margin-top: -3vh;
+    }
+    .down-line{
+        width: 430px;
+        height: 44px;
+        margin-left: 0.01vh;
+    }
+    .down-line img{
+        width: 16px;
+        height: 16px;
+        object-fit: cover;
+    }
+    .down-line img:nth-of-type(1) { 
+        display: none; 
+    }
+    .down-line p{
+        font-weight: 600;
+        font-size: 0.5rem;
+    }
+    .grid-text{
+        width: 60px;
+        height: 16px;
+        border-radius: 8px;
+    }
+    .grid-text h1{
+        font-size: 1rem;
+        padding: 0;
+        margin-top: -1vh;
+        margin-left: -3.35vh;
+    }
+    .servicos{
+        margin-top: 2rem;
+    }
+    .gradient{
+        display: none;
+    }
+    .container{
+        margin-top: -9vh;
+        width: 334px;
+        height: 350px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        justify-content: center;
+    }
+    /*Falta alinhar componentes abaixo da seção quem somos*/
+    .quem-somos .title-text h1{
+        margin-top: -26vh;
+        font-size: 1.5em;
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .quem-somos .text-quem-somos p{
+        margin-top: -22vh;
+        font-size: 0.8em;
+        padding-top: 0;
+        padding-left: 0;
+        width: 330px;
+        height: 51px;
+    }
+    .galeria{
+        padding-left:20px;
+        margin-top: 1px;
+        gap: 10px;
+    }
+    .galeria img:nth-child(1){
+        margin: -6px 0 0 -35px;
+        width: 117px;
+        height: 165px;
+    }
+    .galeria img:nth-child(2),
+    .galeria img:nth-child(3) {
+        margin-top: 75px;
+        width: 88px;
+        height: 93px;
+    }
+    .retangulo{
+        margin-left: 5vh;
+        width: 186px;
+        height: 54px;
+        p{
+            font-size: 0.5rem;
+        }
+        p b{
+            font-size: 0.5rem;
+        }
+    }
+    .perguntas-frequentes .content-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+    .perguntas-frequentes .content-left-img{
+        position: relative;
+        margin-top: -15vh;
+        width: 221px;
     }
 }
