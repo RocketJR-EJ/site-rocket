@@ -140,7 +140,6 @@ aside h1{
     /* Adicionado: */
     background-clip: text;
     -webkit-background-clip: text;
-
 }
 
 
@@ -658,6 +657,18 @@ width: 1250px;
     header{
         justify-content: center;
     }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: -10px 0;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
     hr{
         width: 430px;
     }
@@ -680,25 +691,24 @@ width: 1250px;
         max-width: 100%;
     }
     /*Mudanças em componentes e textos*/
-    article{
-        margin-top: -3vh;
-    }
+    
     .down-line{
-        width: 430px;
-        height: 44px;
-        margin-left: 0.01vh;
+        margin: -2vh 0;
     }
+
     .down-line img{
         width: 16px;
         height: 16px;
         object-fit: cover;
     }
+
     .down-line img:nth-of-type(1) { 
         display: none; 
     }
     .down-line p{
         font-weight: 600;
-        font-size: 0.5rem;
+        font-size: 10px;
+        margin: 0;
     }
     .grid-text{
         width: 60px;
