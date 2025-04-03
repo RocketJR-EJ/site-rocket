@@ -1,56 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var swiper = new Swiper(".swiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
-  });
-});
+new Accordion('.accordion-container', {
+  // Opções de animação
+  duration: 400, // duração da animação em ms
+  easing: 'ease-in-out', // tipo de animação
 
-document.addEventListener("DOMContentLoaded", function () {
-  new Typed("#typed-text", {
-      strings: ["Chegou A Hora <br> Da Inovação"],
-      typeSpeed: 50,
-      backSpeed: 30,
-      startDelay: 500,
-      showCursor: true,
-      cursorChar: "|",
-      smartBackspace: true,
-      loop: false
-  });
-});
+  // Comportamento
+  showMultiple: false, // permite apenas um item aberto de cada vez
+  openOnInit: [], // índices dos itens que devem estar abertos na inicialização
 
-document.querySelectorAll('.box-ask').forEach(box => {
-  box.replaceWith(box.cloneNode(true));
-});
+  // Classes CSS personalizadas
+  elementClass: 'ac', // classe para o elemento acordeão
+  triggerClass: 'ac-trigger', // classe para o botão/trigger
+  panelClass: 'ac-panel', // classe para o painel de conteúdo
+  activeClass: 'ac-active', // classe aplicada ao item ativo
 
-// Adiciona os novos event listeners
-document.querySelectorAll('.box-ask').forEach(box => {
-  box.addEventListener('click', function(event) {
-      event.stopPropagation();
-      console.log("Click detectado");
-
-      const isActive = this.classList.contains('active');
-
-      // Primeiro remove 'active' de todas as boxes
-      document.querySelectorAll('.box-ask').forEach(otherBox => {
-          otherBox.classList.remove('active');
-      });
-
-      // Se não estava ativo, adiciona a classe
-      if (!isActive) {
-          this.classList.add('active');
-          console.log("Classe 'active' adicionada");
-      }
-  });
+  // Callbacks
+  beforeOpen: () => { }, // função a ser executada antes de abrir
+  afterOpen: () => { }, // função a ser executada após abrir
+  beforeClose: () => { }, // função a ser executada antes de fechar
+  afterClose: () => { } // função a ser executada após fechar
 });

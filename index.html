@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -56,6 +56,9 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css" />
+    <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
 
     <title>RocketJR</title>
   </head>
@@ -180,11 +183,11 @@
     </section>
 
     <section class="w-full pb-4 bg-red-800 flex flex-col items-center justify-center">
-      <h2 class="text-5xl text-center py-6 text-white font-bold">
-      Quem Somos?
+      <h2 class="text-6xl text-center font-bold text-white py-4">
+        Quem Somos?
       </h2>
 
-      <p class="w-4/5 md:w-2/3 lg:w-1/2 mx-auto text-white text-justify mb-6 px-4"></p>
+      <p class="w-4/5 md:w-2/3 lg:w-1/2 mx-auto text-white text-justify mb-6 px-4">
       A Rocket Júnior (RJR) é a Empresa Júnior do curso de Sistemas de
       Informação do Campus Arapiraca – Unidade Educacional Penedo. Somos um
       time de estudantes apaixonados por tecnologia e inovação, que aplicam na
@@ -195,22 +198,22 @@
       suas carreiras!
       </p>
 
-      <div class="w-screen md:w-3/5 flex items-center justify-center p-2 gap-2 -mt-2">
+      <div class="w-screen md:w-3/5 flex items-center md:items-start justify-center p-2 gap-2 md:gap-8 ">
       <img class="w-1/2 py-2" src="./assets/Frame_2.svg" />
-      <div class="flex flex-col md:flex-row w-1/2 gap-2">
+      <div class="flex flex-col md:flex-row w-1/2 gap-2 md:pt-16">
         <img class="" src="./assets/jay.svg" />
         <img class="" src="./assets/elysa.svg" />
       </div>
       </div>
 
-      <div class="bg-[#7F0000] rounded-2xl m-2 w-4.5/5 -2 ml-6">
-        <p class="text-white text-left text-base ml-5 mr-5">
+      <div class="bg-[#7F0000] rounded-2xl m-2 ml-6 md:p-6">
+        <p class="text-white text-left text-base ml-5 mr-5 md:text-2xl">
           <b>Empresa Júnior</b> do curso bacharelado em <b>Sistemas de Informação</b>
           </p>
       </div>
     </section>
 
-    <section>
+    <section class="md:hidden">
       <h2 class="text-5xl text-center py-6 font-bold bg-gradient-to-r from-[#7B0000] to-[#DB0303] 
       text-transparent bg-clip-text">Perguntas frequentes</h2>
       <div>
@@ -306,6 +309,103 @@
       </div>
     </section>
 
+    <section class="hidden md:block">
+      <h2 class="text-5xl text-center py-6 font-bold bg-gradient-to-r from-[#7B0000] to-[#DB0303] 
+      text-transparent bg-clip-text">Perguntas frequentes</h2>
+      <div class="flex w-full">
+        <div class="flex flex-col justify-center w-2/3 gap-6">
+            <img class="mx-auto w-3/5" src="./assets/logo.svg" />
+            <p class="w-4/5 mx-auto text-justify mb-4 text-[#5B5959]">
+              Veja as perguntas que recebemos frequentemente sobre nossa empresa
+              júnior e nossos serviços. Neste espaço, estamos respondendo apenas
+              algumas delas. Caso tenha alguma dúvida específica sobre nossos
+              serviços, entre em contato com nossa equipe agora mesmo!
+            </p>
+            <button class="rounded-full border-none 
+            bg-gradient-to-r from-[#520101] to-[#F60707] text-white font-bold 
+            cursor-pointer w-40 h-15 mx-auto block text-xl">
+            Contato
+          </button>
+        </div>
+
+        <div class="accordion-container mt-8">
+          <div class="ac bg-[#F0F0F0] w-4/5 rounded-2xl mx-auto p-2">
+            <div class="ac-header text-center">
+              <button class="ac-trigger font-bold">O Que É Uma Landing Page?</button>
+              <div class="icon"></div>
+            </div>
+            <div class="ac-panel">
+              <p class="ac-text text-justify text-[#343434] ml-5 mr-5">
+                Uma Landing Page é uma página web específica criada para
+                converter visitantes em leads ou clientes. É otimizada para uma
+                única ação ou objetivo, como cadastro em newsletter, download de
+                material ou compra de produto.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2 ac">
+            <div class="text-center ac-header">
+              <button class="font-bold ac-trigger">O que é um portfólio?</button>
+              <div class="icon"></div>
+            </div>
+            <div class="ac-panel">
+              <p class="text-justify text-[#343434] ml-5 mr-5 ac-text">
+                Um Portfólio é uma coleção organizada de trabalhos, projetos e
+                realizações que demonstram suas habilidades, experiência e
+                expertise em determinada área. É uma vitrine profissional
+                digital.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2 ac">
+            <div class="text-center ac-header">
+              <button class="font-bold ac-trigger">Qual a diferença entre landing page e portfólio?</button>
+              <div class="icon"></div>
+            </div>
+            <div class="ac-panel">
+              <p class="text-justify text-[#343434] ml-5 mr-5 ac-text">
+                Enquanto uma Landing Page é focada em converter visitantes para
+                uma ação específica, um Portfólio serve para mostrar seu
+                trabalho e experiência. Landing Pages são orientadas à
+                conversão, Portfólios à apresentação.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2 ac">
+            <div class="text-center ac-header">
+              <button class="font-bold ac-trigger">O que é consultoria em TI?</button>
+              <div class="icon"></div>
+            </div>
+            <div class="ac-panel">
+              <p class="text-justify text-[#343434] ml-5 mr-5 ac-text">
+                Consultoria em TI é um serviço especializado que auxilia
+                empresas a otimizar seus processos tecnológicos, implementar
+                soluções digitais e melhorar sua infraestrutura de tecnologia da
+                informação.
+              </p>
+            </div>
+          </div>
+
+            <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2 ac">
+              <div class="text-center ac-header">
+                <button class="font-bold ac-trigger">Por que minha empresa precisa de um site institucional?</button>
+                <div class="icon"></div>
+              </div>
+              <div class="ac-panel">
+                <p class="text-justify text-[#343434] ml-5 mr-5 ac-text">
+                  Um site institucional estabelece presença digital profissional,
+                  aumenta credibilidade, facilita o contato com clientes e serve
+                  como canal de informação 24/7 sobre seus produtos e serviços.
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
     <section class="mt-8">
       <h2 class="text-xl text-center py-6 font-bold bg-gradient-to-r from-[#7B0000] to-[#DB0303] 
       text-transparent bg-clip-text">Nossa Trajetória</h2>
@@ -373,5 +473,13 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var accordion = new Accordion('.accordion-container', {
+          duration: 400,
+          showMultiple: false,
+        });
+      });
+    </script>
   </body>
 </html>
