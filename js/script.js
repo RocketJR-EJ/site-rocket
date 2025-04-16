@@ -1,3 +1,4 @@
+// Inicialização do componente Accordion
 new Accordion('.accordion-container', {
   // Opções de animação
   duration: 400, // duração da animação em ms
@@ -18,4 +19,30 @@ new Accordion('.accordion-container', {
   afterOpen: () => { }, // função a ser executada após abrir
   beforeClose: () => { }, // função a ser executada antes de fechar
   afterClose: () => { } // função a ser executada após fechar
+});
+
+// Efeito de máquina de escrever para o hero da página
+document.addEventListener('DOMContentLoaded', function () {
+  const options = {
+    strings: [
+      'inovação',
+      'tecnologia',
+      'transformação digital',
+      'excelência',
+      'soluções tecnológicas',
+      'criatividade',
+      'qualidade',
+    ],
+    typeSpeed: 60,           // velocidade de digitação
+    backSpeed: 40,           // velocidade de apagamento
+    backDelay: 1500,         // tempo antes de começar a apagar (ms)
+    startDelay: 500,         // tempo antes de começar a digitar (ms)
+    loop: true,              // repetição infinita
+    smartBackspace: true    // apenas apaga o que é diferente entre strings
+  };
+
+  // Inicializa o Typed.js no elemento com ID "typed-text"
+  if (document.getElementById('typed-text')) {
+    new Typed('#typed-text', options);
+  }
 });
