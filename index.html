@@ -183,12 +183,12 @@
     </div>
   </section>
 
-  <section class="w-full pb-4 bg-red-800 flex flex-col items-center justify-center">
-    <h2 class="text-3xl md:text-6xl text-center font-bold text-white py-4 px-4">
+  <section class="w-screen bg-red-800 flex flex-col items-center justify-center py-8">
+    <h2 class="text-3xl md:text-6xl text-center font-bold text-white py-4 w-full">
       Quem Somos?
     </h2>
 
-    <p class="w-4/5 md:w-2/3 lg:w-1/2 mx-auto text-white text-left md:text-justify mb-6 px-4">
+    <p class="w-full px-4 md:w-2/3 lg:w-1/2 mx-auto text-white text-left md:text-center mb-8">
       A Rocket Júnior (RJR) é a Empresa Júnior do curso de Sistemas de
       Informação do Campus Arapiraca – Unidade Educacional Penedo. Somos um
       time de estudantes apaixonados por tecnologia e inovação, que aplicam na
@@ -199,15 +199,26 @@
       suas carreiras!
     </p>
 
-    <div class="w-full md:w-3/5 flex flex-col md:flex-row items-center md:items-start justify-center p-2 md:gap-8">
-      <img class="w-4/5 md:w-1/3 py-2" src="./assets/Frame_2.svg" alt="Equipe Rocket Jr" />
-      <div class="flex flex-col md:flex-row w-4/5 md:w-1/2 gap-4 md:gap-2 md:pt-16 justify-center">
-        <img class="w-full md:w-auto" src="./assets/jay.svg" alt="Membro da equipe" />
-        <img class="w-full md:w-auto" src="./assets/elysa.svg" alt="Membro da equipe" />
+    <!-- Layout diferente para mobile e desktop -->
+    <!-- Mobile: Coluna única, imagem principal em cima e as duas menores abaixo -->
+    <div class="flex flex-col w-full md:hidden px-4">
+      <img class="w-full max-w-xs mx-auto mb-6" src="./assets/Frame_2.svg" alt="Equipe Rocket Jr" />
+      <div class="flex flex-row justify-center gap-6 w-full">
+        <img class="w-[45%] max-w-[150px]" src="./assets/jay.svg" alt="Membro da equipe" />
+        <img class="w-[45%] max-w-[150px]" src="./assets/elysa.svg" alt="Membro da equipe" />
       </div>
     </div>
 
-    <div class="bg-[#7F0000] rounded-2xl m-2 md:m-6 p-3 md:p-6 w-11/12 md:w-auto">
+    <!-- Desktop: Layout horizontal mais balanceado -->
+    <div class="hidden md:flex md:flex-row md:items-center md:justify-center md:gap-12 md:w-4/5 lg:w-3/4 md:mb-6">
+      <img class="md:w-2/5 lg:w-1/3 max-w-md" src="./assets/Frame_2.svg" alt="Equipe Rocket Jr" />
+      <div class="flex flex-col gap-8">
+        <img class="w-full max-w-[250px]" src="./assets/jay.svg" alt="Membro da equipe" />
+        <img class="w-full max-w-[250px]" src="./assets/elysa.svg" alt="Membro da equipe" />
+      </div>
+    </div>
+
+    <div class="bg-[#7F0000] rounded-2xl mx-4 md:mx-6 p-3 md:p-6 w-[calc(100%-2rem)] md:w-auto mt-8">
       <p class="text-white text-center md:text-left text-base md:text-2xl px-2">
         <b>Empresa Júnior</b> do curso bacharelado em <b>Sistemas de Informação</b>
       </p>
