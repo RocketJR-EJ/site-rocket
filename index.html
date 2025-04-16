@@ -1,289 +1,643 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
-      rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/js/script.js" defer></script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
-        rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-      <title>RocketJR</title>
-    </head>
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css" />
+  <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
 
-
-
-    <title>RocketJR</title>
-  </head>
+  <title>RocketJR</title>
+</head>
 
 <body>
-  <header>
-    <a href="#"><img src="./assets/logo.svg" alt="" /></a>
+  <header class="flex flex-col md:flex-row items-center justify-center px-4 py-2 bg-white shadow-md">
+    <a class="flex items-center justify-center md:w-1/6" href="/">
+      <img class="w-32 md:w-40" src="./assets/logo.svg" alt="Rocket Junior" />
+    </a>
 
+    <nav
+      class="hidden md:flex w-full md:w-2/5 justify-center items-center gap-8 border border-gray-500 rounded-2xl py-2">
+      <ul class="flex gap-6">
+        <li><a href="#" class="text-gray-700 hover:text-red-700 font-medium">Início</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-red-700 font-medium">Quem Somos?</a></li>
+        <li><a href="#services" class="text-gray-700 hover:text-red-700 font-medium">Serviços</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-red-700 font-medium">Contato</a></li>
+      </ul>
+    </nav>
 
-
-    <body>
-
-      <nav>
-        <ul>
-          <li><a href="#">Início</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Quem Somos?</a></li>
-        </ul>
-        <ul>
-          <li><a href="#services">Serviços</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-
-      <a href="https://drive.google.com/file/d/1d11fD7wzm5EA1HiZG8wCbjd4VMWHgCNJ/view?fbclid=PAZXh0bgNhZW0CMTEAAaYAETWhDUVvAaFg4RZZlRMEyB6BoQPoybrNpbkmMJBl0iCD0Rdzer-tpeY_aem_GoC2XVxk_z-AHFyh76fgHw"
-        target="_blank"><button class="btn">PS Rocket Jr</button></a>
+    </div>
   </header>
-  <hr>
 
-  <section class="rocket-section">
-    <div class="text-content">
-        <h1 id="typed-text"></h1>
-        <p>A Rocket Jr está no mercado com o propósito de inovar empresas com o desenvolvimento de tecnologias. Deixe a Rocket te ajudar a direcionar seu negócio.</p>
-    </div>
-</section>
+  <section class="w-screen flex items-center justify-center relative mb-0">
+    <!-- Banner com gradiente escuro para melhorar legibilidade em mobile -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-[5]"></div>
 
+    <!-- Imagem de banner -->
+    <img src="./assets/banner.png" class="object-cover w-full h-[60vh] md:h-auto md:w-11/12" alt="Banner Rocket Jr" />
 
-  <article class="down-line">
-    <img src="./assets/icon.svg" alt="" >
-    <p>Melhor valor do mercado<br>
-      Com orçamento gratuito!</p>
-    <img src="./assets/codesandbox.svg" alt="">
-    <p>Metodologia Ágeis</p>
-    <img src="./assets/User-check.svg" alt="">
-    <p>Equipe qualificada</p>
-</article>
-
-
-  <section class="servicos" id="services">
-    <div class="grid-text">
-      <h1>Serviços</h1>
-    </div>
-
-    <aside>
-      <h1 class="gradient">Transformamos suas ideias em <br> soluções digitais inovadoras.</h1>
-    </aside>
-
-    <div class="container swiper">
-      <div class="swiper-wrapper">
-        <div class="card swiper-slide">
-          <img src="./assets/Landing page.svg" alt="">
-          <h1>Landing Page</h1>
-          <p>Desenvolvemos páginas web estratégicas para atrair visitantes e convertê-los em clientes ou leads, aumentando o alcance do seu negócio.</p>
-        </div>
-
-        <div class="card swiper-slide">
-          <img src="./assets/TI.svg" alt="">
-          <h1>Consultoria em TI</h1>
-          <p>Analisamos o setor de Tecnologia da Informação da sua empresa, identificamos oportunidades de melhoria e sugerimos soluções eficientes para otimizar a gestão e os processos.</p>
-        </div>
-
-        <div class="card swiper-slide">
-          <img src="./assets/portifolio.svg" alt="">
-          <h1>Portfólio Digital</h1>
-          <p>Criamos portfólios personalizados para profissionais e empresas, reunindo seus melhores projetos e experiências para destacar sua marca no mercado.</p>
-        </div>
-
-        <div class="card swiper-slide">
-          <img src="./assets/sitee.svg" alt="">
-          <h1>Desenvolvimento de Site</h1>
-          <p>Desenvolvemos sites personalizados, desde páginas institucionais até plataformas web mais complexas, garantindo uma experiência intuitiva, responsiva e eficiente</p>
-        </div>
-
-        <div class="card swiper-slide">
-          <img src="./assets/software.svg" alt="">
-          <h1>Desenvolvimento de Sistemas</h1>
-          <p>Criamos soluções tecnológicas sob medida, desenvolvendo sistemas que automatizam processos e otimizam a gestão da sua empresa.</p>
-        </div>
-      </div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </section>
-
-  <section class="quem-somos">
-      <div class="title-text">
-        <h1>Quem Somos?</h1>
-      </div>
-
-      <div class="text-quem-somos">
-      <p>A Rocket Júnior (RJR) é a Empresa Júnior do curso de Sistemas de Informação do Campus Arapiraca – Unidade Educacional Penedo. Somos um time de estudantes apaixonados por tecnologia e inovação, que aplicam na prática os conhecimentos adquiridos em sala de aula para desenvolver soluções digitais para o mercado.
-        Nosso principal objetivo é proporcionar aos nossos membros uma experiência empresarial real, preparando-os para os desafios do mercado de trabalho e impulsionando suas carreiras!
-      </p>
-      </div>
-
-  <div class="galeria">
-    <img src="./assets/Frame 2.svg">
-    <img class="image1"    src="./assets/jay.svg">
-    <img  class="image2" src="./assets/elysa.svg">
-  </div>
-
-    <div class="container-retangulo">
-      <div class="retangulo">
-        <p><b>Empresa Júnior</b> do curso bacharelado em <br>
-        <b>Sistemas de Informação</b></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="perguntas-frequentes">
-    <h2>Perguntas frequentes</h2>
-    <div class="content-box">
-      <div class="content-left">
-        <img class="content-left-img" src="./assets/logo.svg" />
-        <p>
-          Veja as perguntas que recebemos frequentemente sobre nossa empresa júnior e nossos serviços. Neste espaço, estamos respondendo apenas algumas delas. Caso tenha alguma dúvida específica sobre nossos serviços, entre em contato com nossa equipe agora mesmo!
+    <!-- Conteúdo sobreposto -->
+    <div class="w-full md:w-9/10 z-10 absolute text-left text-white px-4 md:px-10 top-1/2 transform -translate-y-1/2">
+      <!-- Título principal com efeito de digitação -->
+      <div class="max-w-lg">
+        <p class="text-2xl md:text-5xl font-bold mb-3 md:mb-6 leading-tight">
+          Chegou a hora da <span id="typed-text" class="text-red-300 whitespace-nowrap"></span>
         </p>
-        <button class="btn-contact">Contato</button>
+
+        <!-- Subtítulo -->
+        <p class="text-base md:text-2xl w-full md:w-4/5 opacity-90">
+          A Rocket Jr está no mercado com o propósito de inovar empresas com o
+          desenvolvimento de tecnologias. Deixe a Rocket te ajudar a direcionar
+          seu negócio.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="w-screen bg-[#400000] py-4 md:py-0 md:h-20 flex items-center text-white justify-center">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+        <!-- Item 1 -->
+        <div class="flex items-center justify-center w-full md:w-auto mb-3 md:mb-0">
+          <img class="w-6 h-6 md:w-8 md:h-8" src="./assets/icon.svg" alt="" />
+          <p class="font-bold text-sm md:text-lg ml-2">Melhor valor do mercado</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-center justify-center w-full md:w-auto mb-3 md:mb-0">
+          <img class="w-6 h-6 md:w-8 md:h-8" src="./assets/codesandbox.svg" alt="" />
+          <p class="font-bold text-sm md:text-lg ml-2">Orçamento gratuito!</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex items-center justify-center w-full md:w-auto">
+          <img class="w-6 h-6 md:w-8 md:h-8" src="./assets/User-check.svg" alt="" />
+          <p class="font-bold text-sm md:text-lg ml-2">Equipe qualificada</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services" class="w-screen flex flex-col items-center justify-center py-4">
+    <h2
+      class="border border-2 rounded-xl p-2 px-6 my-2 flex justify-center items-center border-red-700 font-bold text-xl">
+      Serviços
+    </h2>
+
+    <div class="flex items-center justify-center my-4">
+      <h1 class="text-3xl md:text-6xl text-center font-bold text-red-700 px-4">
+        Transformamos suas ideias em <br class="hidden sm:block" />
+        soluções digitais inovadoras.
+      </h1>
+    </div>
+
+    <div class="w-full px-4 flex flex-col md:flex-row items-center justify-center">
+      <div
+        class="border rounded-3xl border-gray-500 flex flex-col items-center p-4 m-2 md:m-4 gap-2 w-full sm:w-4/5 md:w-1/6 h-auto min-h-[280px]">
+        <img src="./assets/Landing page.svg" class="w-12 h-12" alt="Landing Page" />
+        <p class="font-bold text-xl text-center">Landing Page</p>
+        <p class="text-center">
+          Desenvolvemos páginas web estratégicas para atrair visitantes e
+          convertê-los em clientes ou leads, aumentando o alcance do seu
+          negócio.
+        </p>
       </div>
 
-      <div class="content-right">
-        <div class="box-ask">
-            <div class="box-header">
-                <span>001</span>
-                <h3>O Que É Uma Landing Page?</h3>
-                <div class="icon"></div>
-            </div>
-            <div class="box-content">
-                <p>Uma Landing Page é uma página web específica criada para converter visitantes em leads ou clientes. É otimizada para uma única ação ou objetivo, como cadastro em newsletter, download de material ou compra de produto.</p>
-            </div>
+      <div
+        class="border rounded-3xl border-gray-500 flex flex-col items-center p-4 m-2 md:m-4 gap-2 w-full sm:w-4/5 md:w-1/6 h-auto min-h-[280px]">
+        <img src="./assets/TI.svg" class="w-12 h-12" alt="Consultoria em TI" />
+        <p class="font-bold text-xl text-center">Consultoria em TI</p>
+        <p class="text-center">
+          Analisamos o setor de Tecnologia da Informação da sua empresa,
+          identificamos oportunidades de melhoria e sugerimos soluções
+          eficientes para otimizar a gestão e os processos.
+        </p>
+      </div>
+
+      <div
+        class="border rounded-3xl border-gray-500 flex flex-col items-center p-4 m-2 md:m-4 gap-2 w-full sm:w-4/5 md:w-1/6 h-auto min-h-[280px]">
+        <img src="./assets/portifolio.svg" class="w-12 h-12" alt="Portfólio Digital" />
+        <p class="font-bold text-xl text-center">Portfólio Digital</p>
+        <p class="text-center">
+          Criamos portfólios personalizados para profissionais e empresas,
+          reunindo seus melhores projetos e experiências para destacar sua
+          marca no mercado.
+        </p>
+      </div>
+
+      <div
+        class="border rounded-3xl border-gray-500 flex flex-col items-center p-4 m-2 md:m-4 gap-2 w-full sm:w-4/5 md:w-1/6 h-auto min-h-[280px]">
+        <img class="w-12 h-12" src="./assets/sitee.svg" alt="Desenvolvimento de Site" />
+        <p class="font-bold text-xl text-center">Desenvolvimento de Site</p>
+        <p class="text-center">
+          Desenvolvemos sites personalizados, desde páginas institucionais até
+          plataformas web mais complexas, garantindo uma experiência
+          intuitiva, responsiva e eficiente
+        </p>
+      </div>
+
+      <div
+        class="border rounded-3xl border-gray-500 flex flex-col items-center p-4 m-2 md:m-4 gap-2 w-full sm:w-4/5 md:w-1/6 h-auto min-h-[280px]">
+        <img class="w-12 h-12" src="./assets/software.svg" alt="Desenvolvimento de Sistemas" />
+        <p class="font-bold text-xl text-center">Desenvolvimento de Sistemas</p>
+        <p class="text-center">
+          Criamos soluções tecnológicas sob medida, desenvolvendo sistemas que
+          automatizam processos e otimizam a gestão da sua empresa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full pb-4 bg-red-800 flex flex-col items-center justify-center">
+    <h2 class="text-3xl md:text-6xl text-center font-bold text-white py-4 px-4">
+      Quem Somos?
+    </h2>
+
+    <p class="w-4/5 md:w-2/3 lg:w-1/2 mx-auto text-white text-left md:text-justify mb-6 px-4">
+      A Rocket Júnior (RJR) é a Empresa Júnior do curso de Sistemas de
+      Informação do Campus Arapiraca – Unidade Educacional Penedo. Somos um
+      time de estudantes apaixonados por tecnologia e inovação, que aplicam na
+      prática os conhecimentos adquiridos em sala de aula para desenvolver
+      soluções digitais para o mercado. Nosso principal objetivo é
+      proporcionar aos nossos membros uma experiência empresarial real,
+      preparando-os para os desafios do mercado de trabalho e impulsionando
+      suas carreiras!
+    </p>
+
+    <div class="w-full md:w-3/5 flex flex-col md:flex-row items-center md:items-start justify-center p-2 md:gap-8">
+      <img class="w-4/5 md:w-1/3 py-2" src="./assets/Frame_2.svg" alt="Equipe Rocket Jr" />
+      <div class="flex flex-col md:flex-row w-4/5 md:w-1/2 gap-4 md:gap-2 md:pt-16 justify-center">
+        <img class="w-full md:w-auto" src="./assets/jay.svg" alt="Membro da equipe" />
+        <img class="w-full md:w-auto" src="./assets/elysa.svg" alt="Membro da equipe" />
+      </div>
+    </div>
+
+    <div class="bg-[#7F0000] rounded-2xl m-2 md:m-6 p-3 md:p-6 w-11/12 md:w-auto">
+      <p class="text-white text-center md:text-left text-base md:text-2xl px-2">
+        <b>Empresa Júnior</b> do curso bacharelado em <b>Sistemas de Informação</b>
+      </p>
+    </div>
+  </section>
+
+  <section class="md:hidden">
+    <h2 class="text-5xl text-center py-6 font-bold bg-gradient-to-r from-[#7B0000] to-[#DB0303] 
+      text-transparent bg-clip-text">Perguntas frequentes</h2>
+    <div>
+      <div>
+        <img class="hidden md:flex mx-auto" src="./assets/logo.svg" />
+        <p class="w-4/5 mx-auto text-justify mb-4 text-[#5B5959]">
+          Veja as perguntas que recebemos frequentemente sobre nossa empresa
+          júnior e nossos serviços. Neste espaço, estamos respondendo apenas
+          algumas delas. Caso tenha alguma dúvida específica sobre nossos
+          serviços, entre em contato com nossa equipe agora mesmo!
+        </p>
+        <button class="rounded-full border-none 
+            bg-gradient-to-r from-[#520101] to-[#F60707] text-white font-bold 
+            cursor-pointer w-40 h-15 mt-8 mx-auto block text-xl">
+          Contato
+        </button>
+      </div>
+
+      <div class="mt-8">
+        <div class="bg-[#F0F0F0] w-4/5 rounded-2xl mx-auto p-2">
+          <div class="text-center ">
+            <h3 class="font-bold">O Que É Uma Landing Page?</h3>
+            <div class="icon"></div>
+          </div>
+          <div class="">
+            <p class="text-justify text-[#343434] ml-5 mr-5">
+              Uma Landing Page é uma página web específica criada para
+              converter visitantes em leads ou clientes. É otimizada para uma
+              única ação ou objetivo, como cadastro em newsletter, download de
+              material ou compra de produto.
+            </p>
+          </div>
         </div>
 
-        <div class="box-ask">
-            <div class="box-header">
-                <span>002</span>
-                <h3>O Que É Um Portfólio?</h3>
-                <div class="icon"></div>
-            </div>
-            <div class="box-content">
-                <p>Um Portfólio é uma coleção organizada de trabalhos, projetos e realizações que demonstram suas habilidades, experiência e expertise em determinada área. É uma vitrine profissional digital.</p>
-            </div>
+        <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2">
+          <div class="text-center ">
+            <h3 class="font-bold">O que é um portfólio?</h3>
+            <div class="icon"></div>
+          </div>
+          <div class="">
+            <p class="text-justify text-[#343434] ml-5 mr-5">
+              Um Portfólio é uma coleção organizada de trabalhos, projetos e
+              realizações que demonstram suas habilidades, experiência e
+              expertise em determinada área. É uma vitrine profissional
+              digital.
+            </p>
+          </div>
         </div>
 
-        <div class="box-ask">
-            <div class="box-header">
-                <span>003</span>
-                <h3>Qual A Diferença Entre Landing Page E Portfólio?</h3>
-                <div class="icon"></div>
-            </div>
-            <div class="box-content">
-                <p>Enquanto uma Landing Page é focada em converter visitantes para uma ação específica, um Portfólio serve para mostrar seu trabalho e experiência. Landing Pages são orientadas à conversão, Portfólios à apresentação.</p>
-            </div>
+        <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2">
+          <div class="text-center">
+            <h3 class="font-bold">Qual a diferença entre landing page e portfólio?</h3>
+            <div class="icon"></div>
+          </div>
+          <div class="">
+            <p class="text-justify text-[#343434] ml-5 mr-5">
+              Enquanto uma Landing Page é focada em converter visitantes para
+              uma ação específica, um Portfólio serve para mostrar seu
+              trabalho e experiência. Landing Pages são orientadas à
+              conversão, Portfólios à apresentação.
+            </p>
+          </div>
         </div>
 
-        <div class="box-ask">
-            <div class="box-header">
-                <span>004</span>
-                <h3>O Que É Consultoria Em TI?</h3>
-                <div class="icon"></div>
-            </div>
-            <div class="box-content">
-                <p>Consultoria em TI é um serviço especializado que auxilia empresas a otimizar seus processos tecnológicos, implementar soluções digitais e melhorar sua infraestrutura de tecnologia da informação.</p>
-            </div>
+        <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2">
+          <div class="text-center ">
+            <h3 class="font-bold">O que é consultoria em TI?</h3>
+            <div class="icon"></div>
+          </div>
+          <div class="">
+            <p class="text-justify text-[#343434] ml-5 mr-5">
+              Consultoria em TI é um serviço especializado que auxilia
+              empresas a otimizar seus processos tecnológicos, implementar
+              soluções digitais e melhorar sua infraestrutura de tecnologia da
+              informação.
+            </p>
+          </div>
         </div>
 
-        <div class="box-ask">
-            <div class="box-header">
-                <span>005</span>
-                <h3>Por que minha empresa precisa de um site institucional?</h3>
-                <div class="icon"></div>
-            </div>
-            <div class="box-content">
-                <p>Um site institucional estabelece presença digital profissional, aumenta credibilidade, facilita o contato com clientes e serve como canal de informação 24/7 sobre seus produtos e serviços.</p>
-            </div>
+        <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2">
+          <div class="text-center ">
+            <h3 class="font-bold text-center">Por que minha empresa precisa de um site institucional?</h3>
+            <div class="icon"></div>
+          </div>
+          <div class="">
+            <p class="text-justify text-[#343434] ml-5 mr-5">
+              Um site institucional estabelece presença digital profissional,
+              aumenta credibilidade, facilita o contato com clientes e serve
+              como canal de informação 24/7 sobre seus produtos e serviços.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="hidden md:block">
+    <h2 class="text-5xl text-center py-6 font-bold bg-gradient-to-r from-[#7B0000] to-[#DB0303] 
+      text-transparent bg-clip-text">Perguntas frequentes</h2>
+    <div class="flex w-full">
+      <div class="flex flex-col justify-center w-2/3 gap-6">
+        <img class="mx-auto w-3/5" src="./assets/logo.svg" />
+        <p class="w-4/5 mx-auto text-justify mb-4 text-[#5B5959]">
+          Veja as perguntas que recebemos frequentemente sobre nossa empresa
+          júnior e nossos serviços. Neste espaço, estamos respondendo apenas
+          algumas delas. Caso tenha alguma dúvida específica sobre nossos
+          serviços, entre em contato com nossa equipe agora mesmo!
+        </p>
+        <button class="rounded-full border-none 
+            bg-gradient-to-r from-[#520101] to-[#F60707] text-white font-bold 
+            cursor-pointer w-40 h-15 mx-auto block text-xl">
+          Contato
+        </button>
+      </div>
+
+      <div class="accordion-container mt-8">
+        <div class="ac bg-[#F0F0F0] w-4/5 rounded-2xl mx-auto p-2">
+          <div class="ac-header text-center">
+            <button class="ac-trigger font-bold">O Que É Uma Landing Page?</button>
+            <div class="icon"></div>
+          </div>
+          <div class="ac-panel">
+            <p class="ac-text text-justify text-[#343434] ml-5 mr-5">
+              Uma Landing Page é uma página web específica criada para
+              converter visitantes em leads ou clientes. É otimizada para uma
+              única ação ou objetivo, como cadastro em newsletter, download de
+              material ou compra de produto.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2 ac">
+          <div class="text-center ac-header">
+            <button class="font-bold ac-trigger">O que é um portfólio?</button>
+            <div class="icon"></div>
+          </div>
+          <div class="ac-panel">
+            <p class="text-justify text-[#343434] ml-5 mr-5 ac-text">
+              Um Portfólio é uma coleção organizada de trabalhos, projetos e
+              realizações que demonstram suas habilidades, experiência e
+              expertise em determinada área. É uma vitrine profissional
+              digital.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2 ac">
+          <div class="text-center ac-header">
+            <button class="font-bold ac-trigger">Qual a diferença entre landing page e portfólio?</button>
+            <div class="icon"></div>
+          </div>
+          <div class="ac-panel">
+            <p class="text-justify text-[#343434] ml-5 mr-5 ac-text">
+              Enquanto uma Landing Page é focada em converter visitantes para
+              uma ação específica, um Portfólio serve para mostrar seu
+              trabalho e experiência. Landing Pages são orientadas à
+              conversão, Portfólios à apresentação.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2 ac">
+          <div class="text-center ac-header">
+            <button class="font-bold ac-trigger">O que é consultoria em TI?</button>
+            <div class="icon"></div>
+          </div>
+          <div class="ac-panel">
+            <p class="text-justify text-[#343434] ml-5 mr-5 ac-text">
+              Consultoria em TI é um serviço especializado que auxilia
+              empresas a otimizar seus processos tecnológicos, implementar
+              soluções digitais e melhorar sua infraestrutura de tecnologia da
+              informação.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F0F0] mt-4 w-4/5 rounded-2xl mx-auto p-2 ac">
+          <div class="text-center ac-header">
+            <button class="font-bold ac-trigger">Por que minha empresa precisa de um site institucional?</button>
+            <div class="icon"></div>
+          </div>
+          <div class="ac-panel">
+            <p class="text-justify text-[#343434] ml-5 mr-5 ac-text">
+              Um site institucional estabelece presença digital profissional,
+              aumenta credibilidade, facilita o contato com clientes e serve
+              como canal de informação 24/7 sobre seus produtos e serviços.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="timeline-section">
-    <h2 class="timeline-title">Nossa Trajetória</h2>
+  <section class="mt-8 container mx-auto px-4 py-8">
+    <h2 class="text-2xl md:text-3xl text-center py-6 font-bold bg-gradient-to-r from-[#7B0000] to-[#DB0303] 
+        text-transparent bg-clip-text mb-6 md:mb-10">Nossa Trajetória</h2>
 
-    <div class="timeline-container">
-        <div class="timeline-item">
-            <div class="timeline-content">
-              <h3 class="timeline-heading">Aplicação Do Formulário PNDL 2024</h3>
-              <div class="timeline-date">Out - Nov 2024</div>
+    <div class="relative">
+      <!-- Linha vertical no centro - visível apenas em telas médias e grandes -->
+      <div
+        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0 border-l-2 border-dashed border-black">
+      </div>
+
+      <!-- Item 1 -->
+      <div class="mb-16 relative">
+        <!-- Layout para mobile -->
+        <div class="md:hidden flex flex-col items-center mb-8">
+          <div class="flex items-center justify-center mb-4">
+            <div
+              class="w-10 h-10 rounded-full border-2 border-[#7B0000] border-dashed flex items-center justify-center">
+              <div class="w-5 h-5 rounded-full bg-[#7B0000] border-4 border-white"></div>
             </div>
-            <div class="timeline-dot red"></div>
-            <div class="timeline-content">
-              <h3 class="timeline-heading">Pesquisa e ligações para as escolas do brasil</h3>
-              <p class="timeline-description">Pesquisa e ligações para as escolas do brasil Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor.</p>
+          </div>
+          <div class="text-center px-4">
+            <h3 class="text-xl font-bold text-gray-800">Aplicação Do Formulário PNDL 2024</h3>
+            <div class="text-sm font-semibold text-red-700 mt-1">Out - Nov 2024</div>
+            <p class="mt-3 text-gray-600">
+              Pesquisa e ligações para as escolas do Brasil para levantamento de dados e identificação de necessidades.
+            </p>
           </div>
         </div>
 
-        <div class="timeline-item">
-            <div class="timeline-content">
-              <h3 class="timeline-heading">SisWeeek 2024</h3>
-              <div class="timeline-date">Out - Nov 2024</div>
+        <!-- Layout para desktop -->
+        <div class="hidden md:flex md:flex-row items-center">
+          <div class="md:w-1/2 md:pr-8 md:text-right">
+            <h3 class="text-xl font-bold text-gray-800">Aplicação Do Formulário PNDL 2024</h3>
+            <div class="text-sm font-semibold text-red-700 mt-1">Out - Nov 2024</div>
+            <p class="mt-3 text-gray-600">
+              Pesquisa e ligações para as escolas do Brasil para levantamento de dados e identificação de necessidades.
+            </p>
+          </div>
+
+          <!-- Círculo central (marcador) -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center z-10">
+            <div
+              class="w-12 h-12 rounded-full border-2 border-[#7B0000] border-dashed flex items-center justify-center">
+              <div class="w-6 h-6 rounded-full bg-[#7B0000] border-4 border-white"></div>
             </div>
-            <div class="timeline-dot black"></div>
-            <div class="timeline-content">
-              <h3 class="timeline-heading">Desenvolvimento da aplicação web</h3>
-              <p class="timeline-description">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor.</p>
+          </div>
+
+          <!-- Espaço em branco à direita em telas grandes -->
+          <div class="md:w-1/2 md:pl-8"></div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="mb-16 relative">
+        <!-- Layout para mobile -->
+        <div class="md:hidden flex flex-col items-center mb-8">
+          <div class="flex items-center justify-center mb-4">
+            <div
+              class="w-10 h-10 rounded-full border-2 border-[#333333] border-dashed flex items-center justify-center">
+              <div class="w-5 h-5 rounded-full bg-[#333333] border-4 border-white"></div>
+            </div>
+          </div>
+          <div class="text-center px-4">
+            <h3 class="text-xl font-bold text-gray-800">SisWeek 2024</h3>
+            <div class="text-sm font-semibold text-red-700 mt-1">Abr 2024</div>
+            <p class="mt-3 text-gray-600">
+              Participação na Semana de Sistemas de Informação com apresentação de projetos e desenvolvimento de
+              aplicação web.
+            </p>
           </div>
         </div>
+
+        <!-- Layout para desktop -->
+        <div class="hidden md:flex md:flex-row items-center">
+          <!-- Espaço em branco à esquerda em telas grandes -->
+          <div class="md:w-1/2 md:pr-8"></div>
+
+          <!-- Círculo central (marcador) -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center z-10">
+            <div
+              class="w-12 h-12 rounded-full border-2 border-[#333333] border-dashed flex items-center justify-center">
+              <div class="w-6 h-6 rounded-full bg-[#333333] border-4 border-white"></div>
+            </div>
+          </div>
+
+          <!-- Conteúdo à direita em telas grandes -->
+          <div class="md:w-1/2 md:pl-8 text-left">
+            <h3 class="text-xl font-bold text-gray-800">SisWeek 2024</h3>
+            <div class="text-sm font-semibold text-red-700 mt-1">Abr 2024</div>
+            <p class="mt-3 text-gray-600">
+              Participação na Semana de Sistemas de Informação com apresentação de projetos e desenvolvimento de
+              aplicação web.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="mb-16 relative">
+        <!-- Layout para mobile -->
+        <div class="md:hidden flex flex-col items-center mb-8">
+          <div class="flex items-center justify-center mb-4">
+            <div
+              class="w-10 h-10 rounded-full border-2 border-[#7B0000] border-dashed flex items-center justify-center">
+              <div class="w-5 h-5 rounded-full bg-[#7B0000] border-4 border-white"></div>
+            </div>
+          </div>
+          <div class="text-center px-4">
+            <h3 class="text-xl font-bold text-gray-800">Fundação da Rocket Jr</h3>
+            <div class="text-sm font-semibold text-red-700 mt-1">Jan 2024</div>
+            <p class="mt-3 text-gray-600">
+              Criação oficial da empresa júnior do curso de Sistemas de Informação, com definição de missão, visão e
+              valores.
+            </p>
+          </div>
+        </div>
+
+        <!-- Layout para desktop -->
+        <div class="hidden md:flex md:flex-row items-center">
+          <div class="md:w-1/2 md:pr-8 md:text-right">
+            <h3 class="text-xl font-bold text-gray-800">Fundação da Rocket Jr</h3>
+            <div class="text-sm font-semibold text-red-700 mt-1">Jan 2024</div>
+            <p class="mt-3 text-gray-600">
+              Criação oficial da empresa júnior do curso de Sistemas de Informação, com definição de missão, visão e
+              valores.
+            </p>
+          </div>
+
+          <!-- Círculo central (marcador) -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center z-10">
+            <div
+              class="w-12 h-12 rounded-full border-2 border-[#7B0000] border-dashed flex items-center justify-center">
+              <div class="w-6 h-6 rounded-full bg-[#7B0000] border-4 border-white"></div>
+            </div>
+          </div>
+
+          <!-- Espaço em branco à direita em telas grandes -->
+          <div class="md:w-1/2 md:pl-8"></div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="relative">
+        <!-- Layout para mobile -->
+        <div class="md:hidden flex flex-col items-center mb-8">
+          <div class="flex items-center justify-center mb-4">
+            <div
+              class="w-10 h-10 rounded-full border-2 border-[#333333] border-dashed flex items-center justify-center">
+              <div class="w-5 h-5 rounded-full bg-[#333333] border-4 border-white"></div>
+            </div>
+          </div>
+          <div class="text-center px-4">
+            <h3 class="text-xl font-bold text-gray-800">Primeiro Projeto Comercial</h3>
+            <div class="text-sm font-semibold text-red-700 mt-1">Mar 2024</div>
+            <p class="mt-3 text-gray-600">
+              Desenvolvimento do primeiro projeto comercial, consolidando a entrada da Rocket Jr no mercado de
+              tecnologia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Layout para desktop -->
+        <div class="hidden md:flex md:flex-row items-center">
+          <!-- Espaço em branco à esquerda em telas grandes -->
+          <div class="md:w-1/2 md:pr-8"></div>
+
+          <!-- Círculo central (marcador) -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center z-10">
+            <div
+              class="w-12 h-12 rounded-full border-2 border-[#333333] border-dashed flex items-center justify-center">
+              <div class="w-6 h-6 rounded-full bg-[#333333] border-4 border-white"></div>
+            </div>
+          </div>
+
+          <!-- Conteúdo à direita em telas grandes -->
+          <div class="md:w-1/2 md:pl-8 text-left">
+            <h3 class="text-xl font-bold text-gray-800">Primeiro Projeto Comercial</h3>
+            <div class="text-sm font-semibold text-red-700 mt-1">Mar 2024</div>
+            <p class="mt-3 text-gray-600">
+              Desenvolvimento do primeiro projeto comercial, consolidando a entrada da Rocket Jr no mercado de
+              tecnologia.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-container">
-      <div class="logo-section">
-          <img src="assets/logo-rocket-nameWhite.svg" alt="Rocket Junior" class="rocket-logo">
+  </section>
+  <footer class="w-screen bg-black flex flex-col items-center justify-center py-6 md:py-8">
+    <div class="w-full flex flex-col items-center justify-center">
+      <!-- Logo -->
+      <div class="mt-4 md:mt-6 w-full flex flex-col items-center justify-center">
+        <img src="assets/logo-rocket-nameWhite.svg" alt="Rocket Junior" class="w-2/3 md:w-1/3 max-w-[240px]" />
       </div>
 
-      <div class="partner-logos">
-          <img src="assets/LOGO FEJEA.svg" alt="FEJEA" class="partner-logo">
-          <img src="assets/brasil-junior.svg" alt="Brasil Junior" class="partner-logo">
+      <!-- Logos parceiros -->
+      <div
+        class="mt-6 md:mt-8 flex flex-col sm:flex-row items-center justify-center w-4/5 sm:w-1/2 border-t border-white pt-6 gap-6">
+        <div class="flex flex-row items-center justify-center gap-6 w-full">
+          <img src="assets/LOGO FEJEA.svg" alt="FEJEA" class="w-[100px] md:w-[120px]" />
+          <img src="assets/brasil-junior.svg" alt="Brasil Junior" class="w-[100px] md:w-[120px]" />
+        </div>
       </div>
-  </div>
+    </div>
 
-  <div class="footer-links">
-    <a href="/privacy" class="footer-link">Privacy Policy</a>
-    <span class="footer-link">2025 Rocket Jr All Rights Reserved.</span>
-    <a href="/terms" class="footer-link">Terms Of Service</a>
-  </div>
-</footer>
+    <!-- Links e Copyright -->
+    <div class="w-full flex flex-col sm:flex-row items-center justify-center text-center mt-8 mb-2 px-4">
+      <div class="flex flex-col sm:flex-row items-center mb-4 sm:mb-0">
+        <a href="/privacy" class="footer-link text-white text-sm md:text-base px-3 py-2 hover:text-gray-300">Política de
+          privacidade</a>
+        <a href="/terms" class="footer-link text-white text-sm md:text-base px-3 py-2 hover:text-gray-300">Termos de
+          serviço</a>
+      </div>
+      <span class="footer-link text-white text-sm md:text-base px-3">© 2025 Rocket Jr. todos os direitos
+        reservados.</span>
+    </div>
+
+    <!-- Redes sociais -->
+    <div class="flex flex-row items-center justify-center gap-4 mt-4">
+      <!-- Ícones de redes sociais podem ser adicionados aqui -->
+    </div>
+  </footer>
 
   <script src="./js/script.js"></script>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var accordion = new Accordion('.accordion-container', {
+        duration: 400,
+        showMultiple: false,
+      });
+    });
+  </script>
 </body>
 
 </html>
