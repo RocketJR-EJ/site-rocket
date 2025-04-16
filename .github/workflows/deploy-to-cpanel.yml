@@ -1,0 +1,34 @@
+name: Deploy to cPanel
+on:
+  push:
+    branches:
+      - dev  # Deploy apenas quando houver push na branch dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+        
+      # Adicione aqui quaisquer passos de build necessários
+      # Por exemplo, para um projeto Node.js:
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '16'
+      # - name: Install dependencies
+      #   run: npm ci
+      # - name: Build project
+      #   run: npm run build
+        
+      - name: Deploy para cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./  # Diretório local para enviar (ou ./dist/ se você tiver uma build)
+          server-dir: /public_html/dev/  # Pasta no servidor cPanel
+          dangerous-clean-slate: true  # Limpa o diretório de destino antes do upload
