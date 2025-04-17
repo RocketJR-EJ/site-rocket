@@ -35,7 +35,14 @@ jobs:
           server-dir: / # Pasta raiz do public_html para a versão principal
           dangerous-clean-slate: false # Não limpa o diretório de destino antes do upload
           exclude: |
-            **/dev/** # Exclui a pasta dev do processo de limpeza e atualização
+            **/.git*/**
+            **/.git*
+            **/dev/**
+            **/.github/**
+            **/node_modules/**
+            **/.vscode/**
+            **/.DS_Store
+            **/README.md
 
   deploy-dev:
     if: github.ref == 'refs/heads/dev'
@@ -65,3 +72,11 @@ jobs:
           local-dir: ./ # Diretório local para enviar (ou ./dist/ se você tiver uma build)
           server-dir: /dev/ # Pasta para versão de desenvolvimento
           dangerous-clean-slate: true # Limpa o diretório de destino antes do upload
+          exclude: |
+            **/.git*/**
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/.vscode/**
+            **/.DS_Store
+            **/README.md
