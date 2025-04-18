@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://www.rocketjr.com.br/</loc> <!-- Substitua pela URL real -->
+    <lastmod>2024-05-15</lastmod> <!-- Atualize com a data da última modificação -->
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.rocketjr.com.br/#services</loc> <!-- Link para seção -->
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rocketjr.com.br/#quem-somos</loc> <!-- Link para seção -->
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+   <url>
+    <loc>https://www.rocketjr.com.br/#faq</loc> <!-- Link para seção -->
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://www.rocketjr.com.br/#trajetoria</loc> <!-- Link para seção -->
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://www.rocketjr.com.br/#contato</loc> <!-- Link para seção -->
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Adicione URLs para as páginas de Política de Privacidade e Termos, se existirem como páginas separadas -->
+  <!--
+  <url>
+    <loc>https://www.rocketjr.com.br/privacy</loc>
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.rocketjr.com.br/terms</loc>
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  -->
+</urlset>
