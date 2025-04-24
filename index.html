@@ -10,7 +10,7 @@
   <meta name="description"
     content="A Rocket Júnior, Empresa Júnior de Sistemas de Informação, oferece desenvolvimento de sites, landing pages, portfólios digitais, sistemas e consultoria em TI. Transformamos suas ideias em realidade digital." />
   <meta name="keywords"
-    content="empresa júnior, sistemas de informação, penedo, alagoas, desenvolvimento web, site institucional, landing page, portfólio digital, consultoria ti, desenvolvimento de sistemas, rocket jr, rocket junior" />
+    content="empresa júnior, sistemas de informação, penedo, alagoas, desenvolvimento web, site institucional, landing page, portfólio digital, consultoria ti, desenvolvimento de sistemas, rocket jr, rocket junior, rocketjr" />
   <meta name="author" content="Rocket Júnior" />
   <meta name="robots" content="index, follow" />
 
@@ -113,7 +113,7 @@
   }
   </script>
 
-  <header class="flex flex-col md:flex-row items-center justify-center px-4 py-2 bg-white shadow-md">
+  <header class="flex flex-col md:flex-row items-center justify-center px-4 py-4 bg-white shadow-md">
     <a class="flex items-center justify-center md:w-1/6 shrink-0" href="/" aria-label="Página inicial da Rocket Junior">
       <img class="w-32 md:w-40" src="./assets/logo.svg" alt="Logotipo da Rocket Junior" />
     </a>
@@ -159,14 +159,14 @@
     <section id="inicio" aria-labelledby="banner-heading"
       class="w-screen flex items-center justify-center relative mb-0">
       <!-- Banner com gradiente escuro para melhorar legibilidade em mobile -->
-      <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-[5]"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent md:from-black/60 md:to-black/30 z-[5]"></div>
 
       <!-- Imagem de banner -->
-      <img src="./assets/banner.png" class="object-cover w-full h-[60vh] md:h-auto md:w-11/12"
+      <img src="./assets/banner-1.png" class="object-cover object-[85%_50%] md:object-center w-full h-[40vh] md:h-auto"
         alt="Banner principal da Rocket Jr mostrando equipe trabalhando" fetchpriority="high" />
 
       <!-- Conteúdo sobreposto -->
-      <div class="w-full md:w-9/10 z-10 absolute text-left text-white px-4 md:px-10 top-1/2 transform -translate-y-1/2">
+      <div class="w-full md:w-9/10 z-10 absolute text-left text-white px-4 md:px-10 top-[60%] transform -translate-y-1/2">
         <!-- Título principal com efeito de digitação -->
         <div class="max-w-lg md:max-w-[60%]">
           <h1 id="banner-heading" class="text-2xl md:text-5xl font-bold mb-3 md:mb-6 leading-tight">
@@ -174,7 +174,7 @@
           </h1>
 
           <!-- Subtítulo -->
-          <p class="text-base md:text-2xl w-full md:w-4/5 opacity-90">
+          <p class="text-base md:text-2xl w-full md:w-4/5 opacity-90 text-justify">
             A Rocket Jr está no mercado com o propósito de inovar empresas com o
             desenvolvimento de tecnologias. Deixe a Rocket te ajudar a direcionar
             seu negócio.
@@ -210,13 +210,13 @@
     </div>
 
     <section id="services" aria-labelledby="services-heading"
-      class="w-screen flex flex-col items-center justify-center py-4">
+      class="w-screen flex flex-col items-center justify-center py-4 md:py-16">
       <h2 id="services-heading"
         class="border border-2 rounded-xl p-2 px-6 my-2 flex justify-center items-center border-red-700 font-bold text-xl">
         Serviços
       </h2>
 
-      <div class="flex items-center justify-center my-4">
+      <div class="flex items-center justify-center my-4 mb-12">
         <p class="text-3xl md:text-6xl text-center font-bold text-red-700 px-4"> <!-- Mudado de H1 para P -->
           Transformamos suas ideias em <br class="hidden sm:block" />
           soluções digitais inovadoras.

@@ -25,13 +25,13 @@ new Accordion('.accordion-container', {
 document.addEventListener('DOMContentLoaded', function () {
   const options = {
     strings: [
-      'da inovação',
-      'da tecnologia',
-      'da transformação digital',
-      'da excelência',
-      'das soluções tecnológicas',
-      'da criatividade',
-      'da qualidade',
+      'da inovação!',
+      'da tecnologia!',
+      'da transformação digital!',
+      'da excelência!',
+      'das soluções tecnológicas!',
+      'da criatividade!',
+      'da qualidade!',
     ],
     typeSpeed: 60,           // velocidade de digitação
     backSpeed: 40,           // velocidade de apagamento
